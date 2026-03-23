@@ -61,7 +61,7 @@ const Services: React.FC = () => {
             <Reveal key={idx} delay={idx * 100} className="h-full">
               <div className="group bg-slate-50 rounded-2xl md:rounded-3xl p-4 md:p-6 transition-all hover:bg-white hover:shadow-xl hover:-translate-y-1 md:hover:-translate-y-2 border border-slate-100 h-full flex flex-col">
                 <div className="rounded-xl md:rounded-2xl overflow-hidden mb-4 md:mb-6 h-32 md:h-48 shrink-0">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform group-hover:scale-110" loading="lazy" />
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform group-hover:scale-110" loading="lazy" decoding="async" />
                 </div>
                 <h4 className="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-slate-900">{service.title}</h4>
                 <p className="text-slate-600 mb-4 md:mb-6 text-sm md:text-base leading-relaxed flex-grow">{service.description}</p>
@@ -75,9 +75,10 @@ const Services: React.FC = () => {
                 </ul>
                 <a 
                   href="tel:8048742733"
+                  aria-label={`Ligar para agendar ${service.title}`}
                   className="block w-full text-center py-3 md:py-4 rounded-xl border-2 border-slate-200 font-bold text-slate-800 transition-all hover:bg-slate-900 hover:text-white hover:border-slate-900 mt-auto flex items-center justify-center gap-2"
                 >
-                  <Phone size={14} className="md:size-4" />
+                  <Phone size={14} className="md:size-4" aria-hidden="true" />
                   <span className="text-sm md:text-base">Call to Book</span>
                 </a>
               </div>

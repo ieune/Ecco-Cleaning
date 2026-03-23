@@ -51,6 +51,9 @@ const FAQ: React.FC = () => {
                 <button 
                   onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                   className="w-full flex justify-between items-center p-6 text-left"
+                  aria-expanded={openIndex === idx}
+                  aria-controls={`faq-answer-${idx}`}
+                  id={`faq-question-${idx}`}
                 >
                   <span className={`font-bold text-lg ${openIndex === idx ? 'text-blue-900' : 'text-slate-700'}`}>
                     {faq.question}
@@ -58,6 +61,9 @@ const FAQ: React.FC = () => {
                   {openIndex === idx ? <ChevronUp className="text-blue-600" /> : <ChevronDown className="text-slate-400" />}
                 </button>
                 <div 
+                  id={`faq-answer-${idx}`}
+                  role="region"
+                  aria-labelledby={`faq-question-${idx}`}
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === idx ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}
                 >
                   <p className="px-6 pb-6 text-slate-600 leading-relaxed">

@@ -14,6 +14,8 @@ const About: React.FC = () => {
                 src="/our-story.png" 
                 alt="Our Cleaning Team" 
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border border-slate-100 max-w-xs hidden md:block">
@@ -37,7 +39,7 @@ const About: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                  <MapPin size={20} />
+                  <MapPin size={20} aria-hidden="true" />
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">Richmond Based</h4>
@@ -47,7 +49,7 @@ const About: React.FC = () => {
               
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                  <Award size={20} />
+                  <Award size={20} aria-hidden="true" />
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">Top Rated</h4>
@@ -57,7 +59,7 @@ const About: React.FC = () => {
 
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                  <Users size={20} />
+                  <Users size={20} aria-hidden="true" />
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">Vetted Team</h4>

@@ -85,7 +85,7 @@ const HowItWorks: React.FC = () => {
                   <div className="flex flex-col items-center text-center group">
                     {/* Icon circle */}
                     <div className={`relative w-28 h-28 rounded-full ${step.lightColor} flex items-center justify-center mb-6 shadow-lg ring-4 ring-white transition-transform duration-300 group-hover:-translate-y-2`}>
-                      <Icon size={40} className={step.textColor} strokeWidth={1.6} />
+                      <Icon size={40} className={step.textColor} strokeWidth={1.6} aria-hidden="true" />
                       {/* Step number badge */}
                       <span className={`absolute -top-2 -right-2 w-8 h-8 rounded-full ${step.color} text-white text-sm font-bold flex items-center justify-center shadow-md`}>
                         {idx + 1}
@@ -109,17 +109,19 @@ const HowItWorks: React.FC = () => {
           <div className="mt-20 flex flex-col sm:flex-row justify-center items-center gap-5">
             <a
               href="tel:8048742733"
+              aria-label="Ligar para Ecco House Cleaning"
               className="bg-gradient-to-r from-blue-600 via-blue-400 to-blue-600 bg-[length:200%_100%] animate-shimmer text-white px-12 py-5 rounded-full text-lg font-bold shadow-xl hover:-translate-y-1 transition-transform flex items-center gap-2"
             >
-              <Phone size={20} />
+              <Phone size={20} aria-hidden="true" />
               Call Now
             </a>
             <a
               href="sms:8048742733?body=Hi, I would like a quote"
+              aria-label="Enviar mensagem para Ecco House Cleaning"
               className="flex items-center gap-3 text-slate-700 font-semibold hover:text-blue-600 transition-colors"
             >
               <span className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center">
-                <MessageSquare size={18} className="text-blue-600" />
+                <MessageSquare size={18} className="text-blue-600" aria-hidden="true" />
               </span>
               Or text (804) 874-2733
             </a>

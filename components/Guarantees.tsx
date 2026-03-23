@@ -140,9 +140,10 @@ const Guarantees: React.FC = () => {
             </div>
             <a
               href="tel:8048742733"
+              aria-label="Ligar para Ecco House Cleaning"
               className="shrink-0 bg-gradient-to-r from-blue-600 via-blue-400 to-blue-600 bg-[length:200%_100%] animate-shimmer text-white px-10 py-5 rounded-full text-lg font-bold shadow-xl hover:-translate-y-1 transition-transform whitespace-nowrap flex items-center gap-2"
             >
-              <Phone size={20} />
+              <Phone size={20} aria-hidden="true" />
               Call Now →
             </a>
           </div>

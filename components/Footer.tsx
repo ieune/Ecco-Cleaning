@@ -13,6 +13,8 @@ const Footer: React.FC = () => {
             src="/logo-ecco.svg"
             alt="Ecco Cleaning"
             className="h-10 w-auto"
+            loading="lazy"
+            decoding="async"
           />
           <span className="text-xl font-bold text-white">Ecco Cleaning <span className="text-blue-500">Home Cleaning</span></span>
         </div>

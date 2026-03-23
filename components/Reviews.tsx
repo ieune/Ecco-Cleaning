@@ -63,7 +63,7 @@ const Reviews: React.FC = () => {
             
             <div className="relative z-10 flex flex-col items-center text-center">
               <div className="w-20 h-20 rounded-full border-4 border-blue-50 overflow-hidden mb-6 shadow-md">
-                <img src={reviews[current].avatar} alt={reviews[current].name} className="w-full h-full object-cover" />
+                <img src={reviews[current].avatar} alt={reviews[current].name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
               </div>
               
               <div className="flex gap-1 mb-6">
@@ -87,23 +87,28 @@ const Reviews: React.FC = () => {
           <button 
             onClick={prev}
             className="absolute top-1/2 -left-4 md:-left-12 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all border border-white/30"
+            aria-label="Avaliação anterior"
           >
-            <ChevronLeft size={24} />
+            <ChevronLeft size={24} aria-hidden="true" />
           </button>
           <button 
             onClick={next}
             className="absolute top-1/2 -right-4 md:-right-12 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all border border-white/30"
+            aria-label="Próxima avaliação"
           >
-            <ChevronRight size={24} />
+            <ChevronRight size={24} aria-hidden="true" />
           </button>
           
           {/* Dots */}
-          <div className="flex justify-center gap-2 mt-8">
-            {reviews.map((_, idx) => (
+          <div className="flex justify-center gap-2 mt-8" role="tablist" aria-label="Navegação de avaliações">
+            {reviews.map((review, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrent(idx)}
                 className={`w-3 h-3 rounded-full transition-all ${current === idx ? 'bg-white scale-125' : 'bg-white/40 hover:bg-white/60'}`}
+                role="tab"
+                aria-selected={current === idx}
+                aria-label={`Ir para avaliação de ${review.name}`}
               />
             ))}
           </div>
