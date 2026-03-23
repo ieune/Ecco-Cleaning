@@ -1,9 +1,20 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Sparkles, CheckCircle2, Star, MessageSquare } from 'lucide-react';
 import Reveal from './Reveal';
 
+const slides = ['/hero-slide_1.png', '/hero-slide_2.png', '/hero-slide_3.png'];
+
 const Hero: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative min-h-[90vh] flex items-center pt-20">
       {/* Background Decor */}
@@ -52,12 +63,17 @@ const Hero: React.FC = () => {
         </Reveal>
         
         <Reveal delay={200} className="relative">
-          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-            <img 
-              src="/hero-1.webp" 
-              alt="Clean Home Interior" 
-              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
-            />
+          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white aspect-[4/3] bg-slate-100">
+            {slides.map((slide, index) => (
+              <img 
+                key={slide}
+                src={slide} 
+                alt="Clean Home Interior" 
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                  index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+            ))}
           </div>
           {/* Floating Stats Card */}
           <div className="absolute -bottom-10 -left-6 z-20 hidden sm:block animate-float">

@@ -7,13 +7,13 @@ const servicesList = [
   {
     title: "Regular Cleaning",
     description: "Our signature recurring cleaning. Perfect for keeping your Richmond home consistently fresh and maintained.",
-    image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=400",
+    image: "/services-regular.png",
     features: ["Dusting", "Vacuuming", "Kitchen Sanitizing", "Bathrooms"]
   },
   {
     title: "Deep Cleaning",
     description: "A top-to-bottom thorough scrub of every corner. Recommended for first-time visits and seasonal refreshes.",
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400",
+    image: "/services-deep_cleaning.png",
     features: ["Baseboards", "Inside Cabinets", "Tile Grout", "Deep Disinfect"]
   },
   {

@@ -11,7 +11,7 @@ const About: React.FC = () => {
           <Reveal className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/our-story.webp" 
+                src="/our-story.png" 
                 alt="Our Cleaning Team" 
                 className="w-full h-full object-cover"
               />

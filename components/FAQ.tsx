@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "How do I pay?",
-    answer: "We accept all major credit cards. Payment is processed securely online after the cleaning is completed to your satisfaction."
+    answer: "For your convenience, we accept Zelle, Venmo, check, and cash. Payment is due upon completion of the service, once you are completely satisfied."
   }
 ];
 

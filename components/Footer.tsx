@@ -8,9 +8,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         
         {/* Brand */}
-        <div className="flex items-center justify-center gap-2 mb-6">
-          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">E</div>
-          <span className="text-xl font-bold text-white">Ecco<span className="text-blue-500"> Cleaning</span></span>
+        <div className="flex items-center justify-center gap-3 mb-6">
+          <img
+            src="/logo-ecco.svg"
+            alt="Ecco Cleaning"
+            className="h-10 w-auto"
+          />
+          <span className="text-xl font-bold text-white">Ecco Cleaning <span className="text-blue-500">Home Cleaning</span></span>
         </div>
 
         <p className="text-slate-500 mb-8 max-w-md mx-auto">

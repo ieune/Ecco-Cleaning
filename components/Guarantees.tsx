@@ -31,10 +31,10 @@ const guarantees = [
 ];
 
 const stats = [
-  { value: '5,200+', label: 'Homes Cleaned' },
-  { value: '14', label: 'Years Serving Richmond' },
-  { value: '98%', label: 'Customer Satisfaction' },
-  { value: '4.9★', label: 'Average Google Rating' },
+  { value: '20,000+', label: 'Homes Cleaned' },
+  { value: '16', label: 'Years Serving' },
+  { value: '97%', label: 'Customer Satisfaction' },
+  { value: '4.8', label: 'Average Rating' },
 ];
 
 const Guarantees: React.FC = () => {

@@ -12,8 +12,8 @@ interface SliderItem {
 
 const sliders: SliderItem[] = [
   {
-    before: '/slider-kichen_before.webp',
-    after: '/slider-kichen_after.webp',
+    before: '/slider-kichen_after.webp',
+    after: '/slider-kichen_before.webp',
     label: 'Kitchen',
     tag: 'Deep Clean',
   },
