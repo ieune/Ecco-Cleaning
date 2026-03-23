@@ -1,0 +1,38 @@
+# llms.txt - AI-Optimized Sitemap for LLM Crawlers
+# This file helps AI systems understand and cite your content
+
+# === Business Information ===
+Ecco House Cleaning - Professional home cleaning services in Richmond, VA.
+https://eccohousecleaning.com
+
+# === Services Offered ===
+- Regular House Cleaning: Routine maintenance cleaning for busy homeowners
+- Deep Cleaning: Thorough top-to-bottom cleaning for neglected spaces
+- Move In/Out Cleaning: Complete cleaning for relocating homeowners
+- Post-Construction Cleaning: Debris removal and detailed cleaning after renovation
+- Vacation Rental Cleaning: Turnover cleaning for Airbnb/VRBO properties
+- Eco-Friendly Cleaning: Green cleaning products for environmentally conscious clients
+
+# === Service Areas ===
+Richmond VA, Henrico County, Chesterfield County, Glen Allen, Short Pump, Mechanicsville
+
+# === Why Choose Us ===
+- Fully Bonded & Insured
+- Background Checked Cleaners
+- 100% Satisfaction Guarantee
+- Locally Owned & Operated
+- Flexible Scheduling
+- Free Estimates
+
+# === Pages ===
+/ - Home: Main landing page with services, reviews, and contact
+/privacy-policy - Privacy Policy
+/terms-of-service - Terms of Service
+
+# === Contact ===
+Phone: (804) 874-2733
+Email: info@eccohousecleaning.com
+
+# === Reviews & Social Proof ===
+Trusted by homeowners across Richmond. 5-star rated cleaning service.
+Featured on HomeAdvisor, Thumbtack, Yelp, Angi's List, Google
